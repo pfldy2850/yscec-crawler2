@@ -509,8 +509,8 @@ function checkDiffData() {
 
     if (mail_contents != '') {
       let mailOptions = {
-        from: '이동용 <csldy2850@gmail.com>',
-        to: 'pfldy2850@gmail.com',
+        from: `YSCEC CRAWLER <${user_info['snd_google_email']}>`,
+        to: `${user_info['rcv_email']}`,
         subject: `${moment().format('LLLL')}에 갱신된 새로운 YSCEC 소식입니다.`,
         html: mail_contents
       };
