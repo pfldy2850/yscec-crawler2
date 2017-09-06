@@ -6,7 +6,7 @@ blog: [http://dytis.tistory.com/39](http://dytis.tistory.com/39)
 <br><br>
 
 ### YSCEC CRAWLER 1
-blog: [http://dytis.tistory.com/6](http://dytis.tistory.com/6)
+blog: [http://dytis.tistory.com/6](http://dytis.tistory.com/6) <br>
 github: [https://github.com/pfldy2850/YSCEC-CRAWLER](https://github.com/pfldy2850/YSCEC-CRAWLER)
 
 <br><br>
