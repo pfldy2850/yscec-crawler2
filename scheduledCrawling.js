@@ -6,7 +6,6 @@ crawler.run()
   console.log('-------------------------------------------------------');
   console.log('* CRAWLER TERMINATED');
   console.log('-------------------------------------------------------');
-  process.exit();
 })
 .catch((error) => {
   console.log(error);
@@ -18,7 +17,6 @@ var j = schedule.scheduleJob('* * */2 * * *', function(){
     console.log('-------------------------------------------------------');
     console.log('* CRAWLER TERMINATED');
     console.log('-------------------------------------------------------');
-    process.exit();
   })
   .catch((error) => {
     console.log(error);
