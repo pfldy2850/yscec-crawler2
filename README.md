@@ -3,10 +3,6 @@ YSCEC CRAWLER 2
 It is a crawler for yonsei university's students to make it easy to confirm YSCEC data.
 
 <br>
-npm version : 5.4.0
-<br>
-node version : v8.4.0
-<br>
 blog: [http://dytis.tistory.com/39](http://dytis.tistory.com/39)
 <br><br>
 
@@ -15,6 +11,15 @@ blog: [http://dytis.tistory.com/6](http://dytis.tistory.com/6) <br>
 github: [https://github.com/pfldy2850/YSCEC-CRAWLER](https://github.com/pfldy2850/YSCEC-CRAWLER)
 
 <br><br>
+
+Requirements
+-------------
+<br>
+npm version : 5.4.0
+<br>
+node version : v8.4.0
+
+<br>
 
 Install
 -------------
