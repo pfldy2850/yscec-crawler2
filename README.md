@@ -2,13 +2,20 @@ YSCEC CRAWLER 2
 =============
 It is a crawler for yonsei university's students to make it easy to confirm YSCEC data.
 
-<br>
+blog: [http://dytis.tistory.com/39](http://dytis.tistory.com/39)
+<br><br>
+
+### YSCEC CRAWLER 1
+blog: [http://dytis.tistory.com/6](http://dytis.tistory.com/6)
+github: [https://github.com/pfldy2850/YSCEC-CRAWLER](https://github.com/pfldy2850/YSCEC-CRAWLER)
+
+<br><br>
 
 Install
 -------------
 Install required modules wrote down in package.json.
 <br>
-<code>npm i</code>
+<pre><code>npm i</code></pre>
 
 <br>
 
@@ -16,7 +23,7 @@ One time crawling
 -------------
 YSCEC data is crawled only once.
 <br>
-<code>npm start o</code>
+<pre><code>npm start o</code></pre>
 
 <br>
 
@@ -24,7 +31,7 @@ Scheduled crawling
 -------------
 YSCEC data is crawled every hour.
 <br>
-<code>npm start s</code>
+<pre><code>npm start s</code></pre>
 
 <br>
 
