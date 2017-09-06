@@ -1,1 +1,6 @@
-# yscec-crawler2
+YSCEC CRAWLER 2
+=============
+
+Install
+-------------
+<code>npm install</code>
