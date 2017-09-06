@@ -7,6 +7,7 @@ It is a crawler for yonsei university's students to make it easy to confirm YSCE
 Install
 -------------
 Install required modules wrote down in package.json.
+<br>
 <code>npm i</code>
 
 <br>
@@ -14,6 +15,7 @@ Install required modules wrote down in package.json.
 One time crawling
 -------------
 YSCEC data is crawled only once.
+<br>
 <code>npm start o</code>
 
 <br>
@@ -21,6 +23,7 @@ YSCEC data is crawled only once.
 Scheduled crawling
 -------------
 YSCEC data is crawled every hour.
+<br>
 <code>npm start s</code>
 
 <br>
