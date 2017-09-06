@@ -526,6 +526,8 @@ function checkDiffData() {
         resolve(true);
       });
     }
+
+    resolve(true);
   });
 }
 
