@@ -11,7 +11,7 @@ crawler.run()
   console.log(error);
 });
 
-var j = schedule.scheduleJob('* * 1 * *', function(){
+var j = schedule.scheduleJob('0 0 */1 * *', function(){
   crawler.run()
   .then(() => {
     console.log('-------------------------------------------------------');
