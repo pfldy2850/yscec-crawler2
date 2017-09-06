@@ -1,0 +1,23 @@
+{
+  "name": "yscec-crawler2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run-script",
+    "o": "node oneTimeCrawling.js",
+    "s": "node scheduledCrawling.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "deep-object-diff": "^1.0.4",
+    "jsdom": "^11.2.0",
+    "moment": "^2.18.1",
+    "node-schedule": "^1.2.4",
+    "nodemailer": "^4.1.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "request": "^2.81.0"
+  }
+}
