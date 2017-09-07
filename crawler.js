@@ -525,9 +525,10 @@ function checkDiffData() {
 
         resolve(true);
       });
+    } else {
+      resolve(true);
     }
 
-    resolve(true);
   });
 }
 

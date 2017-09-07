@@ -3,7 +3,9 @@ YSCEC CRAWLER 2
 It is a crawler for yonsei university's students to make it easy to confirm YSCEC data.
 
 <br>
+
 blog: [http://dytis.tistory.com/39](http://dytis.tistory.com/39) <br>
+
 <br>
 
 ### YSCEC CRAWLER 1
