@@ -6,7 +6,10 @@
   "scripts": {
     "start": "npm run-script",
     "o": "node oneTimeCrawling.js",
-    "s": "node scheduledCrawling.js"
+    "s": "node scheduledCrawling.js",
+    "m": "node sendMessage.js",
+    "pm2": "pm2 start scheduledCrawling --name yscec-crawling",
+    "pm2s": "pm2 stop yscec-crawling"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +21,7 @@
     "node-schedule": "^1.2.4",
     "nodemailer": "^4.1.0",
     "nodemailer-smtp-transport": "^2.7.4",
+    "pm2": "^2.6.1",
     "request": "^2.81.0"
   }
 }
