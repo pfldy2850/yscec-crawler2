@@ -8,7 +8,7 @@
     "o": "node oneTimeCrawling.js",
     "s": "node scheduledCrawling.js",
     "m": "node sendMessage.js",
-    "pm2": "pm2 start scheduledCrawling --name yscec-crawling",
+    "pm2": "pm2 start scheduledCrawling.js --name yscec-crawling",
     "pm2s": "pm2 stop yscec-crawling"
   },
   "author": "",

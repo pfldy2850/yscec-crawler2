@@ -355,17 +355,17 @@ function getCourseInfo02(c_index, b_index, iter) {
       if (cur_board['type'] == 'jinotechboard') {
         $('ul.thread-style-lists li').each(function() {
           if (!$(this).hasClass('isnotice')) {
-            let cur_article = $(this).find('a').attr('onclick').replace(`contentMove('`, ``).replace(`')`, ``);
+            if ($(this).find('a').attr('onclick') != undefined) {
+              let cur_article = $(this).find('a').attr('onclick').replace(`contentMove('`, ``).replace(`')`, ``);
 
-            if (course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article] == undefined) {
-              course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article] = {};
+              if (course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article] == undefined) {
+                course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article] = {};
+              }
+
+              course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article]['title'] = $(this).find('a').text();
+              course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article]['date'] = $(this).find('span.thread-post-meta').text();
+              course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article]['content'] = $(this).find('p.thread-post-content').text();
             }
-
-            course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article]['title'] = $(this).find('a').text();
-            course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article]['date'] = $(this).find('span.thread-post-meta').text();
-            course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_article]['content'] = $(this).find('p.thread-post-content').text();
-
-
           }
         });
 
@@ -386,6 +386,9 @@ function getCourseInfo02(c_index, b_index, iter) {
             course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_module_id]['name'] = $(this).find('a').text();
             course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_module_id]['href'] = $(this).find('a').attr('href');
           } else if ($(this).hasClass('assign')) {
+            course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_module_id]['name'] = $(this).find('a').text();
+            course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_module_id]['href'] = $(this).find('a').attr('href');
+          } else if ($(this).hasClass('lcms')) {
             course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_module_id]['name'] = $(this).find('a').text();
             course_info[c_index.toString()]['boards'][b_index.toString()]['articles'][cur_module_id]['href'] = $(this).find('a').attr('href');
           }
