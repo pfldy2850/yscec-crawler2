@@ -42,6 +42,13 @@ let transporter;
 
 function getFirstPage() {
   return new Promise((resolve, reject) => {
+    j = request.jar();
+    
+    options = {
+      method: 'GET',
+      url: 'http://yscec.yonsei.ac.kr/login/index.php',
+      jar: j
+    };
 
     request(options, function (error, response, body) {
       if (error) {

@@ -1,24 +1,20 @@
 const schedule = require('node-schedule');
 const crawler = require('./crawler.js');
 
-crawler.run()
-.then(() => {
-  console.log('-------------------------------------------------------');
-  console.log('* CRAWLER TERMINATED');
-  console.log('-------------------------------------------------------');
-})
-.catch((error) => {
-  console.log(error);
-});
+let is_crawling = false;
 
-var j = schedule.scheduleJob('0 0 */1 * *', function(){
-  crawler.run()
-  .then(() => {
-    console.log('-------------------------------------------------------');
-    console.log('* CRAWLER TERMINATED');
-    console.log('-------------------------------------------------------');
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+var j = schedule.scheduleJob('0 */1 * * *', function(){
+  if (!is_crawling) {
+    crawler.run()
+    .then(() => {
+      console.log('-------------------------------------------------------');
+      console.log('* CRAWLER TERMINATED');
+      console.log('-------------------------------------------------------');
+      is_crawling = false;
+    })
+    .catch((error) => {
+      console.log(error);
+      is_crawling = false;
+    });
+  }
 });
